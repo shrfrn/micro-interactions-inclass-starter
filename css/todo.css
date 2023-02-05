@@ -25,9 +25,9 @@ h2 {
     border-block-start: 1px solid lightgrey;
 }
 .todo-list li input {
+    transition: .4s;
     margin-inline-start: 1em;
     accent-color: lightgrey;
-    transition: .4s;
 }
 .todo-list li:hover input {
     scale: 1.2;

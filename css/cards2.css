@@ -47,8 +47,8 @@ h1 {
 .card h2 {
     position: relative;
     top: 0;
+    
     grid-area: 1 / 1;
-    /* place-self: end end; */
     align-self: end;
     text-align: end;
     margin: 0;
@@ -89,8 +89,8 @@ h1 {
     grid-auto-columns: 50px;
     place-items: center;
 
-    grid-area: 2 / 1;
-    place-self: start start;
+    grid-row: 2;
+    place-self: start;
     position: absolute;
     right: 80px;
     opacity: 0;
