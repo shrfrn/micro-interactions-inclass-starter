@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    margin-block-start: 100px;
+}
+.card {
+    position: relative;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.card > * {
+    transition: 350ms ease-out;
+}
+.card img {
+    display: block;
+}
+
+.card .text {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    color: #eee;
+    opacity: 0;
+}
+.card::before, .card::after {
+    content: '';
+    position: absolute;
+    inset: 1.5em;
+    transition: 350ms ease-out;
+}
+.card::before {
+    scale: 0 1;
+    border-block: 1px solid #fff;
+}
+.card::after {
+    scale: 1 0;
+    border-inline: 1px solid #fff;
+}
+.card:hover img {
+    opacity: .5;
+}
+.card:hover .text {
+    opacity: 1;
+}
+.card:hover::before {
+    scale: 1.05 1;
+}
+.card:hover::after {
+    scale: 1 1.05;
+}

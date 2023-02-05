@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    font-family: monospace;
+}
+.outline {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px dotted darkgray;
+}
+.box {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+    opacity: 0.5;
+
+    /* transform:  
+        translate(50%, 50%) ; */
+}

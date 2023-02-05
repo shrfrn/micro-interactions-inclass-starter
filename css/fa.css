@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+.toolbar{
+    display: grid;
+    width: 80px;
+    grid-auto-rows: 80px;
+    place-items: center;
+
+    background-color: lightgray;
+    border-radius: 10px;
+    font-size: 1.8em;
+    color: rgb(67, 67, 67);
+}
+.fa-brands {
+    transition: all 200ms;
+    cursor: pointer;
+    position: relative;
+}
+.fa-twitter:hover {
+    animation: headShake 600ms;
+}
+.fa-instagram:hover {
+    color: red;
+    scale: 1.2;
+    animation: heartBeat 600ms;
+}
+.fa-instagram::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid red;
+    opacity: 0;
+    transition: all 200ms;
+}
+.fa-instagram:hover::after {
+    opacity: 1;
+    animation: heartBeat 600ms;
+}
+.icon-layers {
+    position: relative;
+}
+.count-badge {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: tomato;
+    padding: 3px;
+    border-radius: 50%;
+    font-size: .4em;
+    right: -8px;
+    top: -4px;
+}
+.fa-youtube:hover + .count-badge {
+    animation: heartBeat 600ms;
+}
+@keyframes pulse {
+    50% {
+        scale: 1.1;
+    }
+}

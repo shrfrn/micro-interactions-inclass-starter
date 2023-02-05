@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d07d44a57c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Menu</title>
+</head>
+<body>
+    <article class="post">
+        <div class="menu">
+            <i class="icon fa-regular fa-comment"></i>
+            <i class="icon fa-regular fa-share-from-square"></i>
+            <i class="icon fa-regular fa-copy"></i>                
+            <i class="icon fa-regular fa-floppy-disk"></i>
+            <i class="icon fa-regular fa-pen-to-square"></i>
+            <i class="badge fa-solid fa-bell"></i>
+            <i class="icon fa-solid fa-bars" onclick="toggleMenuIcons()" ></i>
+        </div>
+        <h2 onclick="addBadge()">Apple</h2>
+        <h3>An apple a day keeps the doctor away</h3>
+        <section>
+            <img src="img/apple.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex eveniet aperiam fugiat reiciendis optio error numquam magnam eos vitae? Molestiae, temporibus officiis blanditiis tempore velit itaque obcaecati cum officia quos quis facere eligendi nulla. Harum, incidunt placeat explicabo possimus aliquid non laudantium nostrum nam qui sunt est quos itaque aut modi quas dolorem eaque animi minima unde. Alias expedita praesentium rerum debitis obcaecati cum ullam nam accusamus, repellendus, reprehenderit quia deserunt? Aperiam eos.</p>
+        </section>
+    </article>
+    <script>
+        function toggleMenuIcons() {
+            const elMenu = document.querySelector('.menu')
+            elMenu.classList.toggle('shown')
+        }
+        function addBadge() {
+            const elMenu = document.querySelector('.badge')
+            elMenu.classList.toggle('show-badge')
+        }
+    </script>
+</body>
+</html>
