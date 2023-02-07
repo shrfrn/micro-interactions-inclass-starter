@@ -15,6 +15,4 @@
     width: 4px;
     height: 20px;
     background-color: #000;
-    
-    animation: grow 700ms alternate infinite;
 }
