@@ -7,10 +7,11 @@
 
 .loader ul {
     display: flex;
-    gap: 8px
-}
-.loader ul li {
+    gap: 8px;
     list-style: none;
+}
+
+.loader ul li {
     display: block;
     width: 4px;
     height: 20px;
