@@ -8,7 +8,7 @@ h1 {
     width: 300px;
     height: 300px;
     margin: 20px auto;
-    border: 1px dotted darkgray;
+    outline: 1px dotted darkgray;
 }
 .box {
     position: absolute;
