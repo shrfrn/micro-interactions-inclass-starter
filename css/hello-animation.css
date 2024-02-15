@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 .box {
     width: 60vw;
     height: 60vh;
@@ -9,14 +10,11 @@
     background-color: darkgray;
     margin: 100px auto;
 }
+
 .small-box {
     width: 100px;
     height: 100px;
 
     border: 2px solid lightgray;
     background-color: darkseagreen;
-}
-.box2 {
-    position: relative;
-    top: -100px;
 }
