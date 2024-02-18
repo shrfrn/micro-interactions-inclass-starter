@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/swipe.css">
+        <title>swipe</title>
+    </head>
+    <body>
+        <div class="rail">
+            <span>Swipe to unlock...</span>
+            <div class="slider hint-animation"></div>
+        </div>
+        <script>
+            const elSlider = document.querySelector('.slider')
+
+            // Animation can't retrigger after it has ended.
+            // In order to overcome this, 
+            // remove the animation when it ends...
+            // Now the hover animation will work.
+
+            elSlider.addEventListener('animationend', 
+                () => elSlider.classList.remove('hint-animation'))
+        </script>
+    </body>
+</html>
