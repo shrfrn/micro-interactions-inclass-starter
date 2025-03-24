@@ -8,4 +8,14 @@
     height: 80px;
 
     border: 4px solid rgba(67, 148, 192, 0.1);
+    border-block-start: 4px solid rgba(67, 148, 192);
+    border-radius: 50%;
+
+    animation: spin 800ms infinite linear;
+}
+
+@keyframes spin {
+    to {
+        rotate: 1turn;
+    }
 }
