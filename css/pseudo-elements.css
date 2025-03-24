@@ -6,3 +6,83 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding-inline-start: 1em;
 }
+
+p::selection {
+    background-color: darkseagreen;
+}
+
+li::marker {
+    content: '😁  ';
+}
+
+li:hover::marker {
+    content: '😅  ';
+}
+
+p {
+    position: relative;
+}
+
+p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -.5rem;
+    
+    width: 4px;
+    transition: 300ms;
+    height: 50%;
+
+    background-color: pink;
+}
+
+p:hover::before {
+    left: -1rem;
+    width: 8px;
+}
+
+.tool-tip {
+    position: relative;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.tool-tip:hover {
+    text-decoration: underline;
+}
+
+.tool-tip::after {
+    content: attr(data-tool-tip);
+    position: absolute;
+    top: -1.3em;
+    left: 90%;
+
+    width: max-content;
+
+    padding: 0.2em .4em;
+    background-color: lightblue;
+    border-radius: .4em;
+
+    font-size: .7em;
+    font-style: italic;
+
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.tool-tip:hover::after {
+    opacity: 1;
+}
+
+.tool-tip::before {
+    content: '*';
+    position: absolute;
+    top: -.3em;
+    right: -.3em;
+
+    font-size: .8em;
+}
+
+.tool-tip:hover::before {
+    opacity: 0;
+}
