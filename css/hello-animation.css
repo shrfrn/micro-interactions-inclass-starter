@@ -17,4 +17,16 @@
 
     border: 2px solid lightgray;
     background-color: darkseagreen;
+
+    animation: moveX 800ms alternate 2 linear;
+}
+
+@keyframes moveX {
+    50% {
+        rotate: 360deg;
+    }
+    to {
+        translate: 
+            calc(60vw - 60px - 100px) calc(60vh - 60px - 100px);
+    }
 }
