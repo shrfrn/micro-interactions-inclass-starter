@@ -29,7 +29,7 @@ h1 {
     transition: all 500ms;
 }
 
-.box:hover {
+.outline:hover .box {
     /* translate: 130px 130px; */
     /* rotate: 25deg; */
     /* scale: 1.3; */
